@@ -5,9 +5,16 @@ public class Calcapp {
 	public static void main(String[] args) {
 		
 		Calculadora calc = new Calculadora();
-		System.out.println("Suma");
-		System.out.println(calc.Suma("20","30","20.50","30.50","49"));
+		
+		calc.MostrarResultado(calc.Suma("20","30","20.50","30.50","49"));
+				
+		calc.MostrarResultado(calc.Suma(2, 2));
+
+		calc.MostrarResultado(calc.Suma(2, 2, 2));
+		
+		calc.MostrarResultado(calc.Suma(2.2, 2.3));
+		
+		calc.MostrarResultado(calc.Suma(2.2, 2.3, 2.4));
 		
 	}
-	
 }
